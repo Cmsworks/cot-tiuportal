@@ -8,6 +8,9 @@ cot-tiuportal
 
 Разработка продолжается по мере возможности и наличия свободного времени.
 
+Демо-сайт: http://tiuportal.cmsworks.ru 
+
+
 Copyright 2014 - cmsworks.ru
 
 Разработчик: Булат Юсупов (devkont) support@cmsworks.ru
