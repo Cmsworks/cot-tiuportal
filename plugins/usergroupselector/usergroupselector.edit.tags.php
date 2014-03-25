@@ -41,13 +41,13 @@ if(($cfg['plugin']['usergroupselector']['allowchange'] || $cfg['plugin']['usergr
 		$groups_values[] = $v;
 		$groups_titles[] = $cot_groups[$v]['title'];
 		
-		$usergroupid = ($usergroup == $cot_groups[$v]['alias']) ? $v : 0;
-		
+		if($usergroup == $cot_groups[$v]['alias']) $usergroupid = $v;
+
 		$t->assign(array(
 			'USERGROUP_ROW_ID' => $v,
 			'USERGROUP_ROW_TITLE' => $cot_groups[$v]['title'],
 			'USERGROUP_ROW_ALIAS' => $cot_groups[$v]['alias'],
-			'USERGROUP_ROW_ACTIVEID' =>  $usergroupid,
+			'USERGROUP_ROW_ACTIVEID' => ($usergroup == $cot_groups[$v]['alias']) ? true : false,
 		));
 		$t->parse('MAIN.USERGROUP_ROW');		
 	}

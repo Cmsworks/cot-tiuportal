@@ -38,6 +38,12 @@
 					<td>{USERS_REGISTER_VERIFYIMG}</td>
 					<td>{USERS_REGISTER_VERIFYINPUT} *</td>
 				</tr>
+				<!-- IF {USERS_REGISTER_USERAGREEMENT} -->
+				<tr>
+					<td>{PHP.L.useragreement}</td>
+					<td><label class="checkbox">{USERS_REGISTER_USERAGREEMENT} *</label></td>
+				</tr>
+				<!-- ENDIF -->
 				<tr>
 					<td colspan="2" class="valid">
 						<input type="submit" class="btn btn-primary btn-large" value="{PHP.L.Submit}" />
