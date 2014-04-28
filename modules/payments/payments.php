@@ -17,6 +17,7 @@
 defined('COT_CODE') or die('Wrong URL');
 
 require_once cot_incfile('payments', 'module');
+require_once cot_incfile('forms');
 
 if (!in_array($m, array('billing', 'balance', 'error')))
 {
