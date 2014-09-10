@@ -29,6 +29,24 @@
 
 			{PRD_TEXT}
 			
+			<!-- IF {PRD_COST} > 0 AND {PRD_STATE} == 0 -->
+			<p>&nbsp;</p>
+			<p>
+				<!-- IF {PHP.cot_plugins_active.tiuorders} AND {PHP|cot_auth('plug', 'tiuorders', 'R')} -->
+					<!-- IF {PRD_ORDER_ID} -->
+						<a href="{PRD_ORDER_ID|cot_url('tiuorders', 'id='$this)}">{PHP.L.tiuorders_title}</a>
+						<!-- IF {PRD_ORDER_DOWNLOAD} -->
+						<p><a class="btn btn-success" href="{PRD_ORDER_DOWNLOAD}">{PHP.L.tiuorders_file_download}</a></p>
+						<!-- ELSE -->
+						<p><span class="label label-info">{PRD_ORDER_LOCALSTATUS}</span></p>
+						<!-- ENDIF -->  
+					 <!-- ELSE -->
+						 <p><a class="btn btn-large btn-success" href="{PRD_ID|cot_url('tiuorders', 'm=neworder&pid='$this)}">{PHP.L.tiuorders_neworder_button}</a></p>
+					 <!-- ENDIF -->
+				<!-- ENDIF -->
+			</p>
+			<!-- ENDIF -->
+			
 			{PRD_COMMENTS_DISPLAY}
 
 		</div>

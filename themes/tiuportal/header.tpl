@@ -35,6 +35,13 @@
 					<!-- IF {PHP.cot_modules.profile} -->
 					<div><a href="{PHP|cot_url('profile')}">{PHP.L.profile_profile}</a></div>
 					<!-- ENDIF -->
+					<!-- IF {PHP.cfg.payments.balance_enabled} -->
+					<div><a href="{HEADER_USER_BALANCE_URL}">{PHP.L.payments_mybalance}: {HEADER_USER_BALANCE|number_format($this, '2', '.', ' ')} {PHP.cfg.payments.valuta}</a></div>
+					<!-- ENDIF -->
+					<!-- IF {PHP.cot_plugins_active.tiuorders} -->
+					<div><a href="{PHP|cot_url('tiuorders', 'm=sales')}">{PHP.L.tiuorders_mysales}</a></div>
+					<div><a href="{PHP|cot_url('tiuorders', 'm=purchases')}">{PHP.L.tiuorders_mypurchases}</a></div>
+					 <!-- ENDIF -->
 					<div>{HEADER_USER_PROFILE}</div>
 					<div>{HEADER_USER_PMREMINDER}</div>
 					<div>{HEADER_USER_ADMINPANEL} {HEADER_USER_LOGINOUT}</div>
