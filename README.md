@@ -8,7 +8,7 @@ cot-tiuportal
 
 Разработка продолжается по мере возможности и наличия свободного времени.
 
-Демо-сайт: http://tiuportal.cmsworks.ru 
+Демо-сайт: http://cmsworks.ru/demo/tiu
 
 
 Copyright 2014 - cmsworks.ru
