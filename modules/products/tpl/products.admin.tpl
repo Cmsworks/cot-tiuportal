@@ -14,31 +14,33 @@
 		<h2>{PHP.L.Products} ({ADMIN_PRD_TOTALDBFIRMS})</h2>
 		{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/warnings.tpl"}
 		<div class=" button-toolbar block">
-				<a title="{PHP.L.Configuration}" href="{ADMIN_PRD_URL_CONFIG}" class="button">{PHP.L.Configuration}</a>
-				<a href="{ADMIN_PRD_URL_EXTRAFIELDS}" class="button">{PHP.L.adm_extrafields_desc}</a>
-				<a href="{ADMIN_PRD_URL_STRUCTURE}" class="button">{PHP.L.Categories}</a></li>
-				<a href="{ADMIN_PRD_URL_ADD}" class="button special">{PHP.L.prd_addtitle}</a>
+				<a title="{PHP.L.Configuration}" href="{ADMIN_PRD_URL_CONFIG}" class="btn btn-default">{PHP.L.Configuration}</a>
+				<a href="{ADMIN_PRD_URL_EXTRAFIELDS}" class="btn btn-default">{PHP.L.adm_extrafields_desc}</a>
+				<a href="{ADMIN_PRD_URL_STRUCTURE}" class="btn btn-default">{PHP.L.Categories}</a></li>
+				<a href="{ADMIN_PRD_URL_ADD}" class="btn btn-default special">{PHP.L.prd_addtitle}</a>
 		</div>
 		<div class="block">
 			<h3>{PHP.L.Products}:</h3>
-			<form id="form_valqueue" name="form_valqueue" method="post" action="{ADMIN_PRD_FORM_URL}">
+			<form id="form_valqueue" name="form_valqueue" method="post" action="{ADMIN_PRD_FORM_URL}" class="form-horizontal">
 			<table class="cells">
 				<tr>
 					<td class="right" colspan="4">
 						<input type="hidden" name="paction" value="" />
-						<!-- IF {ADMIN_PRD_TOTALITEMS} > 1 -->{PHP.L.adm_sort} {ADMIN_PRD_ORDER} {ADMIN_PRD_WAY};<!-- ENDIF --> {PHP.L.Show} {ADMIN_PRD_FILTER}
-						<input name="paction" type="submit" value="{PHP.L.Filter}" onclick="this.form.paction.value=this.value" />
+						<div class="form-group">
+							<!-- IF {ADMIN_PRD_TOTALITEMS} > 1 -->{PHP.L.adm_sort} {ADMIN_PRD_ORDER} {ADMIN_PRD_WAY};<!-- ENDIF --> {PHP.L.Show} {ADMIN_PRD_FILTER}
+							<input name="paction" type="submit" class="btn btn-default" value="{PHP.L.Filter}" onclick="this.form.paction.value=this.value" />
+						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="coltop width5">
+					<th class="coltop width5">
 						<!-- IF {PHP.cfg.jquery} -->
 						<input name="allchek" class="checkbox" type="checkbox" value="" onclick="$('.checkbox').attr('checked', this.checked);" />
 						<!-- ENDIF -->
-					</td>
-					<td class="coltop width5">{PHP.L.Id}</td>
-					<td class="coltop width65">{PHP.L.Title}</td>
-					<td class="coltop width25">{PHP.L.Action}</td>
+					</th>
+					<th class="coltop width5">{PHP.L.Id}</th>
+					<th class="coltop width65">{PHP.L.Title}</th>
+					<th class="coltop width25">{PHP.L.Action}</th>
 				</tr>
 <!-- BEGIN: PRD_ROW -->
 				<tr>
@@ -71,10 +73,10 @@
 						</div>
 					</td>
 					<td class="action {ADMIN_PRD_ODDEVEN}">
-						<!-- IF {PHP.row.prd_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PRD_URL_FOR_VALIDATED}" class="conproductsLink button">{PHP.L.Validate}</a><!-- ENDIF -->
-						<a title="{PHP.L.Delete}" href="{ADMIN_PRD_URL_FOR_DELETED}" class="conproductsLink button">{PHP.L.short_delete}</a>
-						<a title="{PHP.L.Open}" href="{ADMIN_PRD_ID_URL}" target="_blank" class="button special">{PHP.L.short_open}</a>
-						<a title="{PHP.L.Edit}" href="{ADMIN_PRD_URL_FOR_EDIT}" target="_blank" class="button">{PHP.L.Edit}</a>
+						<!-- IF {PHP.row.prd_state} == 1 --><a title="{PHP.L.Validate}" href="{ADMIN_PRD_URL_FOR_VALIDATED}" class="conproductsLink btn btn-success">{PHP.L.Validate}</a><!-- ENDIF -->
+						<a title="{PHP.L.Delete}" href="{ADMIN_PRD_URL_FOR_DELETED}" class="conproductsLink btn btn-default">{PHP.L.short_delete}</a>
+						<a title="{PHP.L.Open}" href="{ADMIN_PRD_ID_URL}" target="_blank" class="btn btn-default">{PHP.L.short_open}</a>
+						<a title="{PHP.L.Edit}" href="{ADMIN_PRD_URL_FOR_EDIT}" target="_blank" class="btn btn-default">{PHP.L.Edit}</a>
 					</td>
 				</tr>
 <!-- END: PRD_ROW -->
@@ -85,8 +87,8 @@
 <!-- ENDIF -->
 				<tr>
 					<td class="valid" colspan="4">
-						<!-- IF {PHP.filter} != {PHP.L.adm_validated} --><input name="paction" type="submit" value="{PHP.L.Validate}" onclick="this.form.paction.value=this.value" class="conproducts" /><!-- ENDIF -->
-						<input name="paction" type="submit" value="{PHP.L.Delete}" onclick="this.form.paction.value=this.value" />
+						<!-- IF {PHP.filter} != {PHP.L.adm_validated} --><input name="paction" type="submit" value="{PHP.L.Validate}" onclick="this.form.paction.value=this.value" class="conproducts btn btn-success" /><!-- ENDIF -->
+						<input name="paction" type="submit" class="btn btn-default" value="{PHP.L.Delete}" onclick="this.form.paction.value=this.value" />
 					</td>
 				</tr>
 			</table>
