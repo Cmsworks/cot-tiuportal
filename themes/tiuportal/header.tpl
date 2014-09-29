@@ -38,6 +38,9 @@
 					<!-- IF {PHP.cfg.payments.balance_enabled} -->
 					<div><a href="{HEADER_USER_BALANCE_URL}">{PHP.L.payments_mybalance}: {HEADER_USER_BALANCE|number_format($this, '2', '.', ' ')} {PHP.cfg.payments.valuta}</a></div>
 					<!-- ENDIF -->
+					<!-- IF {PHP.cot_plugins_active.myproducts} -->
+					<div><a href="{PHP|cot_url('myproducts')}">{PHP.L.myproducts_title}</a></div>
+					 <!-- ENDIF -->
 					<!-- IF {PHP.cot_plugins_active.tiuorders} -->
 					<div><a href="{PHP|cot_url('tiuorders', 'm=sales')}">{PHP.L.tiuorders_mysales}</a></div>
 					<div><a href="{PHP|cot_url('tiuorders', 'm=purchases')}">{PHP.L.tiuorders_mypurchases}</a></div>
