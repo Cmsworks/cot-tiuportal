@@ -134,7 +134,7 @@ if ($o && $p)
 	empty($where['filter']) || $where['filter'] = implode(' AND ', $where['filter']);
 }
 
-$orderby = "prd_$s $w";
+$orderby['default'] = "prd_$s $w";
 
 $list_url_path = array('c' => $c, 'ord' => $o, 'p' => $p);
 if ($s != $cfg['products']['cat_' . $c]['order'])
@@ -176,12 +176,14 @@ if(empty($sql_prd_string))
 {
 	$where = array_filter($where);
 	$where = ($where) ? 'WHERE ' . implode(' AND ', $where) : '';
+	$order = ($orderby) ? 'ORDER BY ' . implode(', ', $orderby) : '';
 	$sql_prd_count = "SELECT COUNT(*) FROM $db_products as p $join_condition $where";
 	$sql_prd_string = "SELECT p.*, u.* $join_columns
 		FROM $db_products as p $join_condition
 		LEFT JOIN $db_users AS u ON u.user_id=p.prd_ownerid
 		$where
-		ORDER BY $orderby LIMIT $d, ".$cfg['products']['maxrowsperpage'];
+		$order 
+		LIMIT $d, ".$cfg['products']['maxrowsperpage'];
 }
 $totallines = $db->query($sql_prd_count, $params)->fetchColumn();
 $sqllist = $db->query($sql_prd_string, $params);
