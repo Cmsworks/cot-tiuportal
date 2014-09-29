@@ -19,13 +19,13 @@
 		<!-- ENDIF -->
 		<div class="media-body">
 			<h4 class="media-heading"><a href="{LIST_ROW_URL}">{LIST_ROW_SHORTTITLE}</a></h4>
-			<!-- IF {LIST_ROW_DESC} --><p class="small marginbottom10">{LIST_ROW_DESC}</p><!-- ENDIF -->
-			<!-- IF {PHP.usr.isadmin} --><p class="small marginbottom10">{LIST_ROW_ADMIN} ({LIST_ROW_COUNT})</p><!-- ENDIF -->
-			<p>
-				{LIST_ROW_TEXT_CUT}
-				<!-- IF {LIST_ROW_TEXT_IS_CUT} -->{LIST_ROW_MORE}<!-- ENDIF -->
-			</p>
 			<p class="small"><i class="icon-time"></i> {LIST_ROW_DATE}</p>
+			<!-- IF {PHP.cot_plugins_active.payprdtop} -->
+			<p>{LIST_ROW_PAYTOP}</p>
+			<!-- ENDIF -->
+			<!-- IF {PHP.cot_plugins_active.payprdbold} -->
+			<p>{LIST_ROW_PAYBOLD}</p>
+			<!-- ENDIF -->
 		</div>	
 	</div>	
 	<br/>

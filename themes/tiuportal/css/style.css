@@ -253,3 +253,21 @@ ol					{ margin-left:20px; list-style-type:decimal; }
 .form-signin .checkbox {
 	margin-bottom: 20px;
 }
+
+/* 14. For bolder or top products (plugins: PayRpdBold, PayPrdTop)*/
+
+.adbold {
+	border: #4f8a10 2px solid;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	background-color: #dff2bf;
+}
+.adtop {
+	border: #9f6000 2px solid;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+}
