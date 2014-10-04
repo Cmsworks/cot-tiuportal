@@ -102,7 +102,7 @@ if (($tab == 'products' || empty($tab)) && cot_module_active('products') && !cot
 			'PLUGIN_PRODUCTSRES_CATEGORY' => cot_rc_link($url_cat, $structure['products'][$row['prd_cat']]['tpath']),
 			'PLUGIN_PRODUCTSRES_CATEGORY_URL' => $url_cat,
 			'PLUGIN_PRODUCTSRES_TITLE' => cot_rc_link($url_prd, htmlspecialchars($row['prd_title'])),
-			'PLUGIN_PRODUCTSRES_TEXT' => cot_clear_mark($row['prd_text'], $row['prd_type'], $words),
+			'PLUGIN_PRODUCTSRES_TEXT' => cot_clear_mark($row['prd_text'], $words),
 			'PLUGIN_PRODUCTSRES_TIME' => cot_date('datetime_medium', $row['prd_date']),
 			'PLUGIN_PRODUCTSRES_TIMESTAMP' => $row['prd_date'],
 			'PLUGIN_PRODUCTSRES_ODDEVEN' => cot_build_oddeven($jj),
