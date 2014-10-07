@@ -32,7 +32,7 @@
 <!-- END: LIST_ROW -->
 
 <!-- IF {LIST_TOP_PAGINATION} -->
-	<p class="paging clear"><span>{PHP.L.Pages} {LIST_TOP_CURRENTPAGE} {PHP.L.Of} {LIST_TOP_TOTALPAGES}</span>{LIST_TOP_PAGEPREV}{LIST_TOP_PAGINATION}{LIST_TOP_PAGENEXT}</p>
+<div class="pagination"><ul>{LIST_TOP_PAGEPREV}{LIST_TOP_PAGINATION}{LIST_TOP_PAGENEXT}</ul></div>
 <!-- ENDIF -->
 
 <!-- END: MAIN -->

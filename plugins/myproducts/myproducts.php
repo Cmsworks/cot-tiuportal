@@ -82,10 +82,11 @@ $sql = $db->query("SELECT * FROM $db_products AS p
 $pagenav = cot_pagenav('myproducts', 'status=' . $status, $d, $totalitems, $cfg['plugin']['myproducts']['maxrowsperpage']);
 	
 $t->assign(array(
-	"PAGENAV_COUNT" => $totalitems,
-	"PAGENAV_PAGES" => $pagenav['main'],
-	"PAGENAV_PREV" => $pagenav['prev'],
-	"PAGENAV_NEXT" => $pagenav['next'],
+	"LIST_TOP_TOTALPAGES" => $totalitems,
+	"LIST_TOP_CURRENTPAGE" => $pagenav['current'],
+	"LIST_TOP_PAGINATION" => $pagenav['main'],
+	"LIST_TOP_PAGEPREV" => $pagenav['prev'],
+	"LIST_TOP_PAGENEXT" => $pagenav['next'],
 ));
 
 $catpatharray[] = array(cot_url('products'), $L['Products']);
