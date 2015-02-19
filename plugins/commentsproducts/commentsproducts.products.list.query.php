@@ -1,14 +1,14 @@
 <?php
 /* ====================
 [BEGIN_COT_EXT]
-Hooks=products.edit.delete.done
+Hooks=products.list.query
 [END_COT_EXT]
 ==================== */
 
 /**
- * Comments system for Tiuportal (Cotonti)
+ * Comments system for Products module
  *
- * @package commentsprdtiu
+ * @package commentsproducts
  * @version 1.0
  * @author CrazyFreeMan
  * @copyright Copyright (c) CrazyFreeMan 2015
@@ -17,6 +17,8 @@ Hooks=products.edit.delete.done
 
 defined('COT_CODE') or die('Wrong URL');
 
+global $db_com;
+
 require_once cot_incfile('comments', 'plug');
 
-cot_comments_remove('products', $id);
+$join_columns .= ", (SELECT COUNT(*) FROM `$db_com` WHERE com_area = 'products' AND com_code = p.prd_id) AS com_count";

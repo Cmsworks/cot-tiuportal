@@ -1,9 +1,9 @@
 <?php defined('COT_CODE') or die('Wrong URL');
 /* ====================
 [BEGIN_COT_EXT]
-Code=commentsprdtiu
-Name=Comments Products Tiuportal
-Description=Comments system for module Products Tiuportal (Cotonti)
+Code=commentsproducts
+Name=Comments fot Products module
+Description=Comments system for Products module
 Version=1.0.0
 Date=2015-02-19
 Author=CrazyFreeMan

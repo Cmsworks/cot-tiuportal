@@ -7,9 +7,9 @@ Tags=products.list.tpl:{LIST_ROW_COMMENTS}
 ==================== */
 
 /**
- * Comments system for Tiuportal (Cotonti)
+ * Comments system for Products module
  *
- * @package commentsprdtiu
+ * @package commentsproducts
  * @version 1.0
  * @author CrazyFreeMan
  * @copyright Copyright (c) CrazyFreeMan 2015
