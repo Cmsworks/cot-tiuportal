@@ -24,6 +24,9 @@
 		
 		<!-- BEGIN: LIST_ROW -->
 		<div class="media<!-- IF {LIST_ROW_BOLD} > 0 --> adbold<!-- ENDIF --><!-- IF {LIST_ROW_TOP} > 0 --> adtop<!-- ENDIF -->">
+			<!-- IF {LIST_ROW_COMMENTS} -->
+			<span class="pull-right">{LIST_ROW_COMMENTS}</span>
+			<!-- ENDIF -->
 			<!-- IF {LIST_ROW_COST} > 0 -->
 			<div class="pull-right"><span class="label label-success">{LIST_ROW_COST|cot_products_costformat($this)} {PHP.L.valuta}</span></div>
 			<!-- ENDIF -->
