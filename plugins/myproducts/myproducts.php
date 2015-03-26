@@ -8,6 +8,8 @@
 
 defined('COT_CODE') && defined('COT_PLUG') or die('Wrong URL');
 
+require_once cot_incfile('products', 'module');
+
 $id = cot_import('id', 'G', 'INT');
 $status = cot_import('status', 'G', 'ALP');
 
