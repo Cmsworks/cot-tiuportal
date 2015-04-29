@@ -25,11 +25,6 @@ $cot_extrafields[$db_products] = (!empty($cot_extrafields[$db_products]))	? $cot
 
 $structure['products'] = (is_array($structure['products'])) ? $structure['products'] : array();
 
-if (cot_plugin_active('mavatars'))
-{
-	require_once cot_incfile('mavatars', 'plug');
-}
-
 function cot_build_structure_products_tree($c = '', $allsublev = true, $custom_tpl = '', $col = 1)
 {
 	global $cot_extrafields, $db_structure, $structure, $cfg, $db, $sys;
@@ -267,14 +262,6 @@ function cot_generate_prdtags($prd_data, $tag_prefix = '', $textlength = 0, $adm
 			$clone_url = cot_url('products', "m=add&c={$prd_data['prd_cat']}&clone={$prd_data['prd_id']}");
 			$temp_array['ADMIN_CLONE'] = cot_rc_link($clone_url, $L['prd_clone']);
 			$temp_array['ADMIN_CLONE_URL'] = $clone_url;
-		}
-
-		if (cot_plugin_active('mavatars'))
-		{
-			$mavatar = new mavatar('products', $prd_data['prd_cat'], $prd_data['prd_id']);
-			$mavatars_tags = $mavatar->generate_mavatars_tags();
-			$temp_array['MAVATAR'] = $mavatars_tags;
-			$temp_array['MAVATARCOUNT'] = count($mavatars_tags);
 		}
 		
 		// Extrafields
@@ -609,13 +596,6 @@ function cot_products_add(&$rprd, $auth = array())
 		$id = false;
 	}
 
-	if (cot_plugin_active('mavatars'))
-	{
-		$mavatar = new mavatar('products', $rprd['prd_cat'], $id);
-		$mavatar->upload();
-		$mavatar->update();
-	}
-
 	/* === Hook === */
 	foreach (cot_getextplugins('products.add.add.done') as $pl)
 	{
@@ -675,13 +655,6 @@ function cot_products_delete($id, $rprd = array())
 
 	$db->delete($db_products, "prd_id = ?", $id);
 	cot_log("Deleted products #" . $id, 'adm');
-
-	if (cot_plugin_active('mavatars'))
-	{
-		$mavatar = new mavatar('products', $rprd['prd_cat'], $id);
-		$mavatar->delete_all_mavatars();
-		$mavatar->get_mavatars();
-	}
 
 	/* === Hook === */
 	foreach (cot_getextplugins('products.edit.delete.done') as $pl)
@@ -769,13 +742,6 @@ function cot_products_update($id, &$rprd, $auth = array())
 	}
 
 	cot_extrafield_movefiles();
-
-	if (cot_plugin_active('mavatars'))
-	{
-		$mavatar = new mavatar('products', $rprd['prd_cat'], $id);
-		$mavatar->upload();
-		$mavatar->update();
-	}
 
 	/* === Hook === */
 	foreach (cot_getextplugins('products.edit.update.done') as $pl)

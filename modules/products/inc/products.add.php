@@ -167,12 +167,6 @@ foreach($cot_extrafields[$db_products] as $exfld)
 	$t->parse('MAIN.EXTRAFLD');
 }
 
-if(cot_plugin_active('mavatars'))
-{
-	$mavatar = new mavatar('products', $rprd['prd_cat'], 'new');
-	$t->assign('PRDADD_FORM_MAVATAR', $mavatar->generate_upload_form());
-}
-
 // Error and message handling
 cot_display_messages($t);
 
