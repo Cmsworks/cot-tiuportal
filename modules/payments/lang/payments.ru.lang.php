@@ -42,6 +42,7 @@ $L['payments_balance_payout_tax'] = "Комиссия";
 $L['payments_balance_payout_total'] = "Сумма к списанию";
 $L['payments_balance_payout_details'] = 'Реквизиты счета или кошелька';
 $L['payments_balance_payout_error_details'] = 'Не указаны реквизиты';
+$L['payments_balance_payout_error_wrongsumm'] = 'Сумма не может быть отрицательной';
 $L['payments_balance_payout_error_balance'] = 'Указанная сумма превышает баланс вашего счета';
 $L['payments_balance_payout_error_min'] = 'Сумма для вывода не должна быть меньше %1$s %2$s';
 $L['payments_balance_payout_error_max'] = 'Сумма для вывода не должна быть больше %1$s %2$s';

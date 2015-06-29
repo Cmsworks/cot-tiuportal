@@ -42,6 +42,7 @@ $L['payments_balance_payout_tax'] = "Commission";
 $L['payments_balance_payout_total'] = "Amount to be deducted";
 $L['payments_balance_payout_details'] = 'Details';
 $L['payments_balance_payout_error_details'] = 'Details is empty';
+$L['payments_balance_payout_error_wrongsumm'] = 'The amount can not be negative';
 $L['payments_balance_payout_error_balance'] = 'A very large amount';
 $L['payments_balance_payout_error_min'] = 'Amount shall not be less than %1$s %2$s';
 
