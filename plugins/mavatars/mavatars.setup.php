@@ -19,7 +19,7 @@
 
  * [BEGIN_COT_EXT_CONFIG]
  * items=01:select:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16:8:Attachments per post (max.)
- * set=99:textarea::||datas/mavatars|datas/mavatars|0||\r\nproducts||datas/products|datas/products|0||:Format settings cat|path|thumb path|reqiured|ext|mazfilesize
+ * set=99:textarea::||datas/mavatars|datas/mavatars|0||:Format settings cat|path|thumb path|reqiured|ext|mazfilesize
  * turnajax=02:radio::1:
  * turncurl=03:radio::0:
  * filecheck=04:radio::1:

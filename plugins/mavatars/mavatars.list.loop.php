@@ -14,3 +14,4 @@ Hooks=page.list.loop
  */
 
 defined('COT_CODE') or die('Wrong URL');
+
