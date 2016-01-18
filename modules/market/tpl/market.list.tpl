@@ -92,7 +92,7 @@
 		<!-- IF {PAGENAV_COUNT} > 0 -->	
 		<div class="pagination">{PAGENAV_PAGES}</div>
 		<!-- ELSE -->
-		<div class="alert">{PHP.L.market_notfound}</div>
+		<div class="alert alert-info">{PHP.L.market_notfound}</div>
 		<!-- ENDIF -->
 	</div>
 </div>

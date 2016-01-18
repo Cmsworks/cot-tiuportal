@@ -1,11 +1,11 @@
 <?php
 /**
- * JavaScript and CSS loader for Tiuportal theme
+ * JavaScript and CSS loader for Market theme
  *
  * @package Cotonti
  * @version 0.9.0
  * @author CMSWorks Team
- * @copyright Copyright (c) CMSWorks Team 2013
+ * @copyright Copyright (c) CMSWorks Team 2016
  * @license BSD
  */
 

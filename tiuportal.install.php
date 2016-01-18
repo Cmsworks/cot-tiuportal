@@ -35,7 +35,7 @@ function cot_install_step3_tags()
 {
 	global $t, $rtheme, $rscheme;
 
-	$rtheme = 'tiuportal';
+	$rtheme = 'market';
 	$t->assign(array(
 			'INSTALL_THEME_SELECT' => cot_selectbox_theme($rtheme, $rscheme, 'theme'),
 	));

@@ -1,11 +1,11 @@
 <?php
 /**
- * Пользовательский файл локализации скина Tiuportal
+ * Пользовательский файл локализации скина Market
  *
  * @package Cotonti
  * @version 0.9.0
  * @author CMSWorks Team
- * @copyright Copyright (c) CMSWorks Team 2012
+ * @copyright Copyright (c) CMSWorks Team 2016
  * @license BSD
  */
 

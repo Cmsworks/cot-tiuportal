@@ -1,11 +1,11 @@
 <?php
 /**
- * User English Language File for Tiuportal Skin
+ * User English Language File for Market Skin
  *
  * @package Cotonti
  * @version 0.9.0
  * @author CMSWorks Team
- * @copyright Copyright (c) CMSWorks Team 2013
+ * @copyright Copyright (c) CMSWorks Team 2016
  * @license BSD
  */
 
