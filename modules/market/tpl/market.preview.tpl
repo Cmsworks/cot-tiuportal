@@ -2,7 +2,7 @@
 <div class="breadcrumb">{PRD_TITLE}</div>
 <h1><!-- IF {PRD_COST} > 0 --><div class="pull-right cost">{PRD_COST} {PHP.cfg.payments.valuta}</div><!-- ENDIF -->{PRD_SHORTTITLE}</h1>
 <div class="row">
-	<div class="span9">
+	<div class="col-md-9">
 		<div class="media">
 			<!-- IF {PRD_MAVATAR.1} -->
 			<div class="pull-left">
@@ -14,7 +14,7 @@
 				<div class="row">
 					<!-- FOR {KEY}, {VALUE} IN {PRD_MAVATAR} -->
 					<!-- IF {KEY} != 1 -->
-					<a href="{VALUE.FILE}" class="span1 pull-left"><img src="{VALUE|cot_mav_thumb($this, 200, 200, crop)}" /></a>
+					<a href="{VALUE.FILE}" class="col-md-1 pull-left"><img src="{VALUE|cot_mav_thumb($this, 200, 200, crop)}" /></a>
 					<!-- ENDIF -->
 					<!-- ENDFOR -->
 				</div>
@@ -31,10 +31,10 @@
 			</p>	
 		</div>	
 	</div>
-	<div class="span3">	
+	<div class="col-md-3">	
 		<div class="row">
-			<div class="span1">{PRD_OWNER_AVATAR}</div>
-			<div class="span2">
+			<div class="col-md-1">{PRD_OWNER_AVATAR}</div>
+			<div class="col-md-2">
 				<div class="pull-right"><span class="label label-info">{PRD_OWNER_USERPOINTS}</span></div>
 				<div class="owner">{PRD_OWNER_NAME}</div>
 			</div>

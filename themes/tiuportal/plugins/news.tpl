@@ -2,7 +2,7 @@
 
 <div class="row">
 <!-- BEGIN: PAGE_ROW -->
-	<div class="span4">
+	<div class="col-md-4">
 		<h4><a href="{PAGE_ROW_URL}" title="{PAGE_ROW_SHORTTITLE}">{PAGE_ROW_SHORTTITLE}</a></h4>
 		<!-- IF {PAGE_ROW_DESC} --><p class="small">{PAGE_ROW_DESC}</p><!-- ENDIF -->
 

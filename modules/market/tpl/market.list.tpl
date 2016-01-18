@@ -18,8 +18,12 @@
 <div class="well">{CATDESC}</div>
 <!-- ENDIF -->
 <div class="row">
-	<div class="span3">
-		<!-- IF {CATALOG} --><div class="well well-small">{CATALOG}</div><!-- ENDIF -->
+	<div class="col-md-3">
+		<!-- IF {CATALOG} -->
+		<div class="panel panel-default">
+			{CATALOG}
+		</div>
+		<!-- ENDIF -->
 		
 		<!-- IF {PHP.cot_plugins_active.tags} AND {PHP.cot_plugins_active.tagslance} AND {PHP.cfg.plugin.tagslance.market} -->
 		<div class="mboxHD">{PHP.L.Tags}</div>
@@ -27,36 +31,38 @@
 		<!-- ENDIF -->
 		
 	</div>
-	<div class="span9">
-		<div class="well">	
-			<form action="{SEARCH_ACTION_URL}" method="get">
-				<input type="hidden" name="e" value="market" />
-				<input type="hidden" name="l" value="{PHP.lang}" />
-				<table width="100%" cellpadding="5" cellspacing="0">
-					<tr>
-						<td width="100">{PHP.L.Search}:</td>
-						<td>{SEARCH_SQ}</td>
-					</tr>
-					<!-- IF {PHP.cot_plugins_active.locationselector} -->
-					<tr>
-						<td width="100">{PHP.L.Location}:</td>
-						<td>{SEARCH_LOCATION}</td>
-					</tr>
-					<!-- ENDIF -->
-					<tr>
-						<td >{PHP.L.Category}:</td>
-						<td>{SEARCH_CAT}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Order}:</td>
-						<td>{SEARCH_SORTER}</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" name="search" class="btn" value="{PHP.L.Search}" /></td>
-					</tr>
-				</table>		
-			</form>
+	<div class="col-md-9">
+		<div class="panel panel-default">
+			<div class="panel-body">	
+				<form action="{SEARCH_ACTION_URL}" method="get">
+					<input type="hidden" name="e" value="market" />
+					<input type="hidden" name="l" value="{PHP.lang}" />
+					<table width="100%" cellpadding="5" cellspacing="0">
+						<tr>
+							<td width="100">{PHP.L.Search}:</td>
+							<td>{SEARCH_SQ}</td>
+						</tr>
+						<!-- IF {PHP.cot_plugins_active.locationselector} -->
+						<tr>
+							<td width="100">{PHP.L.Location}:</td>
+							<td>{SEARCH_LOCATION}</td>
+						</tr>
+						<!-- ENDIF -->
+						<tr>
+							<td >{PHP.L.Category}:</td>
+							<td>{SEARCH_CAT}</td>
+						</tr>
+						<tr>
+							<td>{PHP.L.Order}:</td>
+							<td>{SEARCH_SORTER}</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" name="search" class="btn" value="{PHP.L.Search}" /></td>
+						</tr>
+					</table>		
+				</form>
+			</div>
 		</div>
 
 		<div id="listmarket">
@@ -84,7 +90,7 @@
 		</div>	
 			
 		<!-- IF {PAGENAV_COUNT} > 0 -->	
-		<div class="pagination"><ul>{PAGENAV_PAGES}</ul></div>
+		<div class="pagination">{PAGENAV_PAGES}</div>
 		<!-- ELSE -->
 		<div class="alert">{PHP.L.market_notfound}</div>
 		<!-- ENDIF -->

@@ -61,14 +61,14 @@
 </div>	
 <hr>
 <div class="row">
-	<div class="span3">
+	<div class="col-md-3">
 		<select name="prd_action" id="prd_action">
 			<option value="0">---</option>
 			<option value="delete">{PHP.L.Delete}</option>
 			<option value="validate">{PHP.L.Validate}</option>
 		</select>		
 	</div>
-	<div class="span9">
+	<div class="col-md-9">
 		<button type="submit" class="btn btn-default">{PHP.L.Confirm}</button>
 	</div>
 </div>

@@ -18,13 +18,13 @@
 
 	<div id="wrapper" class="container">
 		<div id="header" class="row">
-			<div class="span4">
+			<div class="col-md-4">
 				<div class="logo"><a href="{PHP.cfg.mainurl}" title="{PHP.cfg.maintitle} {PHP.cfg.separator} {PHP.cfg.subtitle}"><img src="themes/{PHP.theme}/img/logo.png"/></a></div>
 			</div>
-			<div class="span5">
+			<div class="col-md-5">
 				
 			</div>
-			<div class="span3">
+			<div class="col-md-3">
 				<!-- BEGIN: GUEST -->
 				<div class="auth">
 					<a href="{PHP|cot_url('login')}">{PHP.L.Login}</a>&nbsp;&#8226;&nbsp;<a href="{PHP|cot_url('users','m=register')}">{PHP.L.Register}</a>
@@ -53,23 +53,20 @@
 			</div>
 		</div>
 
-		<div class="navbar">
-			<div class="navbar-inner">
-				<ul class="nav">
-					<li<!-- IF {PHP.env.ext} == 'index' --> class="active"<!-- ENDIF -->><a href="{PHP.cgf.mainurl}">{PHP.L.Home}</a></li>
-					<!-- IF {PHP.cot_modules.products} -->
-					<li<!-- IF {PHP.env.ext} == 'products' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('products')}">{PHP.L.Products}</a></li>
-					<!-- ENDIF -->
-					<li<!-- IF {PHP.env.ext} == 'users' AND ({PHP.group} == 'sellers' AND {PHP.m} == 'main' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('users', 'group=sellers')}">{PHP.L.sellers}</a></li>
-					<li<!-- IF {PHP.env.ext} == 'page' AND {PHP.c} == 'news' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('page','c=news')}">{PHP.L.News}</a></li>
-					<!-- IF {PHP.cot_modules.forums} -->
-					<li<!-- IF {PHP.env.ext} == 'forums' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('forums')}">{PHP.L.Forums}</a></li>
-					<!-- ENDIF -->
-					<!-- IF {PHP.cot_plugins_active.search} -->
-					<li<!-- IF {PHP.env.ext} == 'search' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('plug','e=search')}">{PHP.L.Search}</a></li>
-					<!-- ENDIF -->
-				</ul>
-			</div>
+		<div class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li<!-- IF {PHP.env.ext} == 'index' --> class="active"<!-- ENDIF -->><a href="{PHP.cgf.mainurl}">{PHP.L.Home}</a></li>
+				<!-- IF {PHP.cot_modules.market} -->
+				<li<!-- IF {PHP.env.ext} == 'market' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('market')}">{PHP.L.market}</a></li>
+				<!-- ENDIF -->
+				<li<!-- IF {PHP.env.ext} == 'users' AND ({PHP.group} == 'sellers' AND {PHP.m} == 'main' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('users', 'group=sellers')}">{PHP.L.sellers}</a></li>
+				<!-- IF {PHP.cot_modules.forums} -->
+				<li<!-- IF {PHP.env.ext} == 'forums' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('forums')}">{PHP.L.Forums}</a></li>
+				<!-- ENDIF -->
+				<!-- IF {PHP.cot_plugins_active.search} -->
+				<li<!-- IF {PHP.env.ext} == 'search' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('plug','e=search')}">{PHP.L.Search}</a></li>
+				<!-- ENDIF -->
+			</ul>
 		</div>
 		
 		<div id="main" class="content">

@@ -12,10 +12,12 @@
 defined('COT_CODE') or die('Wrong URL');
 
 // Modules and plugins checked by default
-$default_modules = array('index', 'page', 'users', 'rss', 'payments', 'products');
-$default_plugins = array('ckeditor', 'cleaner', 'html', 'htmlpurifier', 'ipsearch', 'mcaptcha', 'news', 'search', 'mavatars', 'useragreement', 'usergroupselector', 'userimages');
+$default_modules = array('index', 'page', 'users', 'rss', 'payments', 'market');
+$default_plugins = array('ckeditor', 'cleaner', 'html', 'htmlpurifier', 'ipsearch', 'mcaptcha', 'mavatars', 'useragreement', 'usergroupselector', 'userimages');
 
-$L['install_body_message1'] = "Добро пожаловать в скрипт установки Портала товаров и усгу (Tiuportal) от CMSWorks.ru<br/><br/>".$L['install_body_message1'];
+$cfg['defaultlang'] = 'ru';
+
+$L['install_body_message1'] = "Добро пожаловать в скрипт установки Торговой площадки (Tiuportal) от CMSWorks.ru<br/><br/>".$L['install_body_message1'];
 
 function cot_install_step2_tags()
 {

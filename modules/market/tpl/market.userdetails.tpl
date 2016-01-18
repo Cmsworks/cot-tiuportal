@@ -20,7 +20,7 @@
 	<hr>
 	<div class="row">
 	<!-- BEGIN: PRD_ROWS -->
-		<div class="span3 pull-left">
+		<div class="col-md-3 pull-left">
 			<h5><a href="{PRD_ROW_URL}">{PRD_ROW_SHORTTITLE}</a></h5>
 			<!-- IF {PRD_ROW_USER_IS_ADMIN} --><span class="label label-info">{PRD_ROW_LOCALSTATUS}</span><!-- ENDIF -->
 			<!-- IF {PRD_ROW_MAVATAR.1} -->
@@ -32,7 +32,7 @@
 	</div>
 	
 	<!-- IF {PAGENAV_COUNT} > 0 -->	
-	<div class="pagination"><ul>{PAGENAV_PAGES}</ul></div>
+	<div class="pagination">{PAGENAV_PAGES}</div>
 	<!-- ELSE -->
 	<div class="alert">{PHP.L.market_empty}</div>
 	<!-- ENDIF -->

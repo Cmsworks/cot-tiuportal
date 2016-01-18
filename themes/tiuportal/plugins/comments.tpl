@@ -47,15 +47,15 @@
 		<div class="mboxHD comments">{PHP.L.comments_comments}</div>
 <!-- BEGIN: COMMENTS_ROW -->
 		<div class="row comment">
-			<div class="span1">
+			<div class="col-md-1">
 				<p>{COMMENTS_ROW_AUTHOR_AVATAR}</p>
 			</div>
-			<div class="span8">
+			<div class="col-md-8">
 				<p><a href="{COMMENTS_ROW_URL}" id="c{COMMENTS_ROW_ID}">{COMMENTS_ROW_ORDER}.</a> {COMMENTS_ROW_AUTHOR} | {COMMENTS_ROW_DATE}</p>
 				<p>{COMMENTS_ROW_TEXT}</p>
 				{COMMENTS_ROW_ADMIN}{COMMENTS_ROW_EDIT}
 			</div>
-			<div class="span9"><hr class="clear divider" /></div>
+			<div class="col-md-9"><hr class="clear divider" /></div>
 		</div>
 <!-- END: COMMENTS_ROW -->
 

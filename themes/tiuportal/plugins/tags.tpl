@@ -1,7 +1,7 @@
 <!-- BEGIN: MAIN -->
 
 	<div class="row">
-		<div class="span12">
+		<div class="col-md-12">
 			<div class="block">
 				<div class="mboxHD">{PHP.L.tags_Search_tags}</div>
 				<form action="{TAGS_ACTION}" method="post" class="form-inline">

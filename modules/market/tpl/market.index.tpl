@@ -15,5 +15,5 @@
 	</div>
 	<!-- END: PRD_ROWS -->
 </div>
-<div class="pagination"><ul>{PAGENAV_PAGES}</ul></div>
+<div class="pagination">{PAGENAV_PAGES}</div>
 <!-- END: MARKET -->

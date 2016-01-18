@@ -3,12 +3,12 @@
 <div class="breadcrumb">{PAGE_TITLE}</div>
 <h1>{PAGE_SHORTTITLE}</h1>
 <div class="row">
-	<div class="span9">
+	<div class="col-md-9">
 		<div class="clear textbox">{PAGE_TEXT}</div>
 		{PAGE_COMMENTS_DISPLAY}
 	</div>
 
-	<div class="span3">
+	<div class="col-md-3">
 	<!-- BEGIN: PAGE_ADMIN -->
 		<div class="block">
 			<div class="mboxHD admin">{PHP.L.Adminpanel}</div>

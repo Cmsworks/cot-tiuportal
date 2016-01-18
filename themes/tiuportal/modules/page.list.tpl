@@ -3,7 +3,7 @@
 <div class="breadcrumb">{LIST_CATPATH}</div>
 <h1>{LIST_CATTITLE}</h1>
 <div class="row">
-	<div class="span9">
+	<div class="col-md-9">
 		<div class="block">
 <!-- BEGIN: LIST_ROWCAT -->
 			<h3	><a href="{LIST_ROWCAT_URL}" title="{LIST_ROWCAT_TITLE}">{LIST_ROWCAT_TITLE}</a> ({LIST_ROWCAT_COUNT})</h3>
@@ -35,7 +35,7 @@
 		<!-- ENDIF -->
 	</div>
 
-	<div class="span3">
+	<div class="col-md-3">
 		<!-- IF {PHP.usr.auth_write} -->
 		<div class="block">
 			<div class="mboxHD admin">{PHP.L.Admin}</div>
