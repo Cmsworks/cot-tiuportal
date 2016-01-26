@@ -6,20 +6,26 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Cotonti http://www.cotonti.com" />
 {MESSAGE_BASEHREF}
+
+<link href="themes/{PHP.theme}/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 {MESSAGE_STYLESHEET}
 </head>
 
 <body>
-	<div id="main" class="body">
-		<div class="col first">
-			<div class="block">
-				<div class="mboxHD warning">{MESSAGE_TITLE}</div>
-				<div class="warning">
-					{MESSAGE_BODY}
-				</div>
-			</div>
+	<div class="container">
+		<br/>
+		<br/>
+		<br/>
+		<div class="text-center">
+			<a href="{PHP.cfg.mainurl}" title="{PHP.cfg.maintitle} {PHP.cfg.separator} {PHP.cfg.subtitle}"><img src="themes/{PHP.theme}/img/logo.png"/></a>
+		</div>
+		<h1 class="text-center">{MESSAGE_TITLE}</h1>
+		<div class="alert alert-warning">
+			{MESSAGE_BODY}
 		</div>
 	</div>
+
+	<script type="text/javascript" src="themes/{PHP.theme}/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 <!-- END: MAIN -->
