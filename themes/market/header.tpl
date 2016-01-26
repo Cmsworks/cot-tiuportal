@@ -53,24 +53,25 @@
 						<!-- END: USER -->
 					</div>
 				</div>
-
-				<div class="navbar navbar-default">
-					<ul class="nav navbar-nav">
-						<li<!-- IF {PHP.env.ext} == 'index' --> class="active"<!-- ENDIF -->><a href="{PHP.cgf.mainurl}">{PHP.L.Home}</a></li>
-						<!-- IF {PHP.cot_modules.market} -->
-						<li<!-- IF {PHP.env.ext} == 'market' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('market')}">{PHP.L.market}</a></li>
-						<!-- ENDIF -->
-						<li<!-- IF {PHP.env.ext} == 'users' AND ({PHP.group} == 'sellers' AND {PHP.m} == 'main' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('users', 'group=sellers')}">{PHP.L.sellers}</a></li>
-						<!-- IF {PHP.cot_modules.forums} -->
-						<li<!-- IF {PHP.env.ext} == 'forums' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('forums')}">{PHP.L.Forums}</a></li>
-						<!-- ENDIF -->
-						<!-- IF {PHP.cot_plugins_active.search} -->
-						<li<!-- IF {PHP.env.ext} == 'search' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('plug','e=search')}">{PHP.L.Search}</a></li>
-						<!-- ENDIF -->
-					</ul>
-				</div>
 			</div>
 		</header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li<!-- IF {PHP.env.ext} == 'index' --> class="active"<!-- ENDIF -->><a href="{PHP.cgf.mainurl}">{PHP.L.Home}</a></li>
+					<!-- IF {PHP.cot_modules.market} -->
+					<li<!-- IF {PHP.env.ext} == 'market' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('market')}">{PHP.L.market}</a></li>
+					<!-- ENDIF -->
+					<li<!-- IF {PHP.env.ext} == 'users' AND ({PHP.group} == 'sellers' AND {PHP.m} == 'main' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('users', 'group=sellers')}">{PHP.L.sellers}</a></li>
+					<!-- IF {PHP.cot_modules.forums} -->
+					<li<!-- IF {PHP.env.ext} == 'forums' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('forums')}">{PHP.L.Forums}</a></li>
+					<!-- ENDIF -->
+					<!-- IF {PHP.cot_plugins_active.search} -->
+					<li<!-- IF {PHP.env.ext} == 'search' --> class="active"<!-- ENDIF -->><a href="{PHP|cot_url('plug','e=search')}">{PHP.L.Search}</a></li>
+					<!-- ENDIF -->
+				</ul>
+			</div>
+		</nav>
 			
 		<div id="main" class="container">
 		
