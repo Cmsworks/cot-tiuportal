@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.dropzone {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.dropzone.in {
+    font-size: larger;
+}
+.dropzone.hover { }
+.dropzone.fade {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}
+
+.fileupload .filesTable p{ margin-bottom: 5px; }
+.fileupload .filesTable .form-control{ margin-bottom: 10px; }
+.fileupload .filesTable .files-replace-file{ margin-bottom: 5px; }
+.fileupload-progress{ margin: 10px 10px 0 10px; }
+
+.fileupload .filesTable .files .name {
+    /*width: 80px;*/
+    word-wrap: break-word;
+    max-width: 99%;
+    overflow-x: hidden;
+}
+
+.dropzone .progress{ margin-bottom: 10px; }
+
+#task-processing{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 128px;
+    height: 128px;
+    background: url(../lib/upload/img/loading.gif) center no-repeat;
+}
+
+.preview img, .preview canvas{
+    max-width: 140px;
+}
+@media (max-width: 769px) {
+    .files .preview img,
+    .files .preview canvas{
+        max-width: 60px;
+    }
+    .fileupload .filesTable .form-control{
+        max-width: 160px;
+    }
+    .fileupload .filesTable .files .name {
+        max-width: 160px;
+    }
+    .files-replace-file{
+        max-width: 160px;
+    }
+    .dropzone{
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .dropzone .fileupload-progress{
+        margin: 0;
+    }
+}
