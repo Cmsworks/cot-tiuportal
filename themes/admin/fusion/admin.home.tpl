@@ -31,6 +31,10 @@
 					<td class="textcenter width20">{ADMIN_HOME_VERSION}</td>
 				</tr>
 				<tr>
+					<td class="width80">TIU ver</td>
+					<td class="textcenter width20">2.0 RC</td>
+				</tr>
+				<tr>
 					<td>{PHP.L.Database}</td>
 					<td class="textcenter">{ADMIN_HOME_DB_VERSION}</td>
 				</tr>

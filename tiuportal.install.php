@@ -12,12 +12,12 @@
 defined('COT_CODE') or die('Wrong URL');
 
 // Modules and plugins checked by default
-$default_modules = array('index', 'page', 'users', 'rss', 'payments', 'market');
-$default_plugins = array('ckeditor', 'cleaner', 'html', 'htmlpurifier', 'ipsearch', 'mcaptcha', 'mavatars', 'useragreement', 'usergroupselector', 'userimages');
+$default_modules = array('index', 'files', 'page', 'users', 'rss', 'payments', 'market');
+$default_plugins = array('ckeditor', 'cotontilib', 'cleaner', 'html', 'htmlpurifier', 'ipsearch', 'mcaptcha', 'mavatars', 'useragreement', 'usergroupselector', 'userimages');
 
 $cfg['defaultlang'] = 'ru';
 
-$L['install_body_message1'] = "Добро пожаловать в скрипт установки Торговой площадки (Tiuportal) от CMSWorks.ru<br/><br/>".$L['install_body_message1'];
+$L['install_body_message1'] = "Добро пожаловать в скрипт установки Торговой площадки (Tiuportal 2.0 RC) от CMSWorks.ru<br/><br/>".$L['install_body_message1'];
 
 function cot_install_step2_tags()
 {
@@ -45,6 +45,6 @@ function cot_install_step3_setup()
 {
 	global $file;
 	$config_contents = file_get_contents($file['config']);
-	cot_install_config_replace($config_contents, 'admintheme', 'priori');
+	cot_install_config_replace($config_contents, 'admintheme', 'fusion');
 	file_put_contents($file['config'], $config_contents);
 }

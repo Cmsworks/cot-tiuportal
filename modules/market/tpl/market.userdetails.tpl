@@ -20,13 +20,32 @@
 	<hr>
 	<div class="row">
 	<!-- BEGIN: PRD_ROWS -->
-		<div class="col-md-3 pull-left">
-			<h5><a href="{PRD_ROW_URL}">{PRD_ROW_SHORTTITLE}</a></h5>
-			<!-- IF {PRD_ROW_USER_IS_ADMIN} --><span class="label label-info">{PRD_ROW_LOCALSTATUS}</span><!-- ENDIF -->
-			<!-- IF {PRD_ROW_MAVATAR.1} -->
-			<a href="{PRD_ROW_URL}"><img src="{PRD_ROW_MAVATAR.1|cot_mav_thumb($this, 200, 200, crop)}" /></a>
-			<!-- ENDIF -->
-			<!-- IF {PRD_ROW_COST} > 0 --><div class="cost">{PRD_ROW_COST} {PHP.cfg.payments.valuta}</div><!-- ENDIF -->
+		<div class="col-md-4 pull-left">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center">
+					<h5><a href="{PRD_ROW_URL}">{PRD_ROW_SHORTTITLE}</a></h5>
+				</div>
+				<div class="panel-body text-center">
+					
+					<!-- IF {PRD_ROW_ID|cot_files_count('market',$this,'mainlogo','images')} > 0 -->
+					<div class="text-center">
+						<a href="{PRD_ROW_URL}"><img src="{PRD_ROW_ID|cot_files_get('market',$this,'mainlogo')|cot_files_thumb($this,200,200,'crop')}" /></a>
+					</div>
+					<!-- ENDIF -->
+					<hr>		
+					<p class="type"><a href="{PRD_ROW_CATURL}">{PRD_ROW_CATTITLE}</a></p>
+					<p class="owner"><span class="date">{PRD_ROW_DATE_STAMP|cot_date("d M Y",$this)}</span>&nbsp; {PRD_ROW_EDIT_URL}</p>
+					<!-- IF {PRD_ROW_USER_IS_ADMIN} --><p><span class="label label-info">{PRD_ROW_LOCALSTATUS}</span></p><!-- ENDIF -->
+				</div>
+				<div class="panel-footer text-center">
+					<!-- IF {PRD_ROW_COST} > 0 -->
+						<h4>
+							<div class="cost">{PRD_ROW_COST} {PHP.cfg.payments.valuta}</div>
+						</h4>
+					<!-- ENDIF -->
+					<!-- IF {PRD_ROW_USER_IS_ADMIN} --><a href="{PRD_ROW_ADMIN_EDIT_URL}" class="btn btn-info">{PHP.L.Edit}</a><!-- ENDIF -->	
+				</div>
+			</div>
 		</div>
 	<!-- END: PRD_ROWS -->
 	</div>

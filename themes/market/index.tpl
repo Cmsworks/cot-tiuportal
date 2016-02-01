@@ -4,8 +4,8 @@
 		{PHP.L.index_text}
 	</div>
 	
-	<!-- IF {PHP.cot_modules.products} -->
-	{PHP|cot_products_list(12)}
+	<!-- IF {PHP|cot_modul_active('market') -->
+	{PHP|cot_getmarketlist('index',12)}
 	<!-- ENDIF -->
 	
 	<!-- IF {INDEX_NEWS} -->
