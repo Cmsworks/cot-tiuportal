@@ -4,5 +4,5 @@
 Hooks=global
 [END_COT_EXT]
 ==================== */
-require_once cot_langfile('genderavatar', 'plug');
-require_once cot_incfile('genderavatar', 'plug', 'resources');
+
+require_once cot_incfile('genderavatar', 'plug');
