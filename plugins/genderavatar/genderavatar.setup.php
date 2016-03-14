@@ -13,8 +13,8 @@ Auth_guests=R
 Lock_guests=2345A
 Auth_members=RW
 Lock_members=2345
-Requires_modules=users,files
-Requires_plugins=
+Requires_modules=users
+Requires_plugins=userimages
 Recommends_modules=
 Recommends_plugins=
 [END_COT_EXT]
