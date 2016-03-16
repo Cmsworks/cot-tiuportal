@@ -18,7 +18,6 @@ sef-urls.nginx.conf
 /lib/jsmin.php
 /setup/
 /system/*
-!/system/functions.php
 /modules/forums/
 /modules/index/
 /modules/install/
