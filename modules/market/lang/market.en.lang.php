@@ -81,3 +81,5 @@ $L['plu_market_res_sort3'] = 'Category';
 $L['plu_market_search_names'] = 'Search in titles';
 $L['plu_market_search_text'] = 'Search in text';
 $L['plu_market_set_subsec'] = 'Include subcategories';
+
+$L['Images'] = 'Images';

@@ -81,3 +81,5 @@ $L['plu_market_res_sort3'] = 'Категории';
 $L['plu_market_search_names'] = 'Поиск в названиях товаров';
 $L['plu_market_search_text'] = 'Поиск в описании';
 $L['plu_market_set_subsec'] = 'Поиск в подразделах';
+
+$L['Images'] = 'Изображения';
