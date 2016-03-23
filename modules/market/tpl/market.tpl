@@ -11,8 +11,8 @@
 	<div class="col-md-9">
 		<div class="media">	
 			<!-- IF {PRD_ID|cot_files_count('market',$this,'mainlogo','images')} > 0 -->
-			<div >
-				<div class="thumbnail"><img src="{PRD_ID|cot_files_get('market',$this,'mainlogo')|cot_files_thumb($this,400,400,'auto')}" /></div>
+			<div class="prd_slider">
+				{PRD_ID|cot_files_display('market', $this, 'mainlogo', 'files.bootstrap-carousel_gallery')}
 			</div>
 			<!-- ENDIF -->
 			<p class="date">[{PRD_DATE}]</p>

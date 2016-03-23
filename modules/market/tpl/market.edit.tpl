@@ -96,54 +96,9 @@
 		    	    <!-- ENDIF -->	     
 		        </div>		    
 			    <!-- IF {PHP|cot_module_active('files')} -->
-		       		<div class="form-group">
-		       		   <div class="panel-group" id="accordionimg">
-		       		     <div class="panel panel-default">
-		       		       <div class="panel-heading">
-		       		         <h4 class="panel-title">
-		       		           <a data-toggle="collapse" data-parent="#accordionimg" href="#pa-downloadimg">
-		       		             {PHP.L.Image} <span class="caret"></span>
-		       		           </a>
-		       		         </h4>
-		       		       </div>
-		       		       <div class="panel-collapse collapse" id="pa-downloadimg">
-		       		         <div class="panel-body">
-		       		           <div class="row">
-		       		             <div class="col-md-12">
-		       		               <div class="form-group">
-		       		                 <label>Картинка в списке (миниатюра статьи):</label>		       		                 
-		       		                  {PRDEDIT_FORM_ID|cot_files_filebox('market', $this, 'mainlogo', 'image', 1)}
-		       		               </div>
-		       		             </div>
-		       		           </div>
-		       		         </div>
-		       		       </div>
-		       		     </div>
-		       		   </div>
-		       		 </div>
-			       
-			        <div class="panel panel-default">
-			          <div class="panel-heading">
-			            <h4 class="panel-title">
-			              <a data-toggle="collapse" data-parent="#accordion" href="#pa-download">
-			                {PHP.L.Download} <span class="caret"></span>
-			              </a>
-			            </h4>
-			          </div>
-			          <div class="panel-collapse collapse" id="pa-download">
-			            <div class="panel-body">
-			              <div class="row">
-			                <div class="col-md-12">
-			                  <div class="form-group">
-			                    <label>{PHP.L.page_file}</label>
-			                   {PRDEDIT_FORM_ID|cot_files_filebox('market', $this, 'othersfiles')}
-			                  </div>
-			                </div>
-			              </div>
-			            </div>
-			          </div>
-			        </div>
-			        <!-- ENDIF -->
+		       		<label>{PHP.L.Images}:</label>		       		                 
+		       		{PRDEDIT_FORM_ID|cot_files_filebox('market', $this, 'mainlogo', 'image', 10)}
+			    <!-- ENDIF -->
 	            <div class="row">				    
 	        	    <div class="col-md-12">
 	        	        <div class="form-group">
