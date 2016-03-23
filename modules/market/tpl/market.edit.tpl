@@ -112,7 +112,7 @@
 		       		             <div class="col-md-12">
 		       		               <div class="form-group">
 		       		                 <label>Картинка в списке (миниатюра статьи):</label>		       		                 
-		       		                  {PRDEDIT_FORM_ID|cot_files_filebox('market', $this, 'mainlogo','image',1)}
+		       		                  {PRDEDIT_FORM_ID|cot_files_filebox('market', $this, 'mainlogo', 'image', 1)}
 		       		               </div>
 		       		             </div>
 		       		           </div>

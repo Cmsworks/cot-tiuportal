@@ -111,7 +111,7 @@
 		       		             <div class="col-md-12">
 		       		               <div class="form-group">
 		       		                 <label>Картинка в списке (миниатюра статьи):</label>
-		       		                  {PHP|cot_files_filebox('market', 0, 'mainlogo','image',2)}
+		       		                  {PHP|cot_files_filebox('market', 0, 'mainlogo','image',1)}
 		       		               </div>
 		       		             </div>
 		       		           </div>
