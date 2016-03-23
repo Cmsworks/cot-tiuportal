@@ -4,7 +4,11 @@
 <div class="row">
 	<div class="col-md-9">
 		<div class="media">
-				
+				<!-- IF {PRD_ID|cot_files_count('market',$this,'mainlogo','images')} > 0 -->
+			<div class="prd_slider">
+				{PRD_ID|cot_files_display('market', $this, 'mainlogo', 'market.files.bootstrap-carousel_gallery')}
+			</div>
+			<!-- ENDIF -->
 			<p class="date">[{PRD_DATE}]</p>
 			<p class="location">{PRD_COUNTRY} {PRD_REGION} {PRD_CITY}</p>
 			<p class="text">{PRD_TEXT}</p>
