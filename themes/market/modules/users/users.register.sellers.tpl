@@ -14,47 +14,47 @@
 				<form name="login" action="{PHP.usergroup|cot_url('users', 'm=register&a=add&usergroup='$this)}" method="post" enctype="multipart/form-data" class="form-horizontal">
 					<input type="hidden" name="ruserusergroup" value="{PHP.usergroupid}" />
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.Username}:</label>
+						<label class="control-label col-md-4">{PHP.L.Username}:</label>
 						<div class="col-md-8">{USERS_REGISTER_USER}</div>
 					</div>
 					<!-- IF {PHP.cot_plugins_active.locationselector} -->
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.Country}:</label>
+						<label class="control-label col-md-4">{PHP.L.Country}:</label>
 						<div class="col-md-8">{USERS_REGISTER_LOCATION}</div>
 					</div>
 					<!-- ELSE -->
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.Country}:</label>
+						<label class="control-label col-md-4">{PHP.L.Country}:</label>
 						<div class="col-md-8">{USERS_REGISTER_COUNTRY}</div>
 					</div>
 					<!-- ENDIF -->
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.users_validemail}:</label>
+						<label class="control-label col-md-4">{PHP.L.users_validemail}:</label>
 						<div class="col-md-8">
 							{USERS_REGISTER_EMAIL}
 							<p class="small">{PHP.L.users_validemailhint}</p>
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.Password}:</label>
+						<label class="control-label col-md-4">{PHP.L.Password}:</label>
 						<div class="col-md-8">{USERS_REGISTER_PASSWORD}</div>
 					</div>
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.users_confirmpass}:</label>
+						<label class="control-label col-md-4">{PHP.L.users_confirmpass}:</label>
 						<div class="col-md-8">{USERS_REGISTER_PASSWORDREPEAT}</div>
 					</div>
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{USERS_REGISTER_VERIFYIMG}</label>
+						<label class="control-label col-md-4">{USERS_REGISTER_VERIFYIMG}</label>
 						<div class="col-md-8">{USERS_REGISTER_VERIFYINPUT}</div>
 					</div>
 					<!-- IF {USERS_REGISTER_USERAGREEMENT} -->
 					<div class="form-group">
-						<label class="fontrol-label col-md-4">{PHP.L.useragreement}</label>
+						<label class="control-label col-md-4">{PHP.L.useragreement}</label>
 						<div class="col-md-8"><label class="checkbox">{USERS_REGISTER_USERAGREEMENT}</label></div>
 					</div>
 					<!-- ENDIF -->
 					<div class="form-group">
-						<label class="fontrol-label col-md-4"></label>
+						<label class="control-label col-md-4"></label>
 						<div class="col-md-8">
 							<button class="btn btn-primary btn-large">{PHP.L.Submit}</button>
 						</div>

@@ -14,15 +14,15 @@
 					<div class="panel-body">
 						<form name="login" action="{USERS_AUTH_SEND}" method="post" class="form-horizontal">
 							<div class="form-group">
-								<label class="fontrol-label col-md-4">{PHP.L.Username}:</label>
+								<label class="control-label col-md-4">{PHP.L.Username}:</label>
 								<div class="col-md-8">{USERS_AUTH_USER}</div>
 							</div>
 							<div class="form-group">
-								<label class="fontrol-label col-md-4">{PHP.L.Password}:</label>
+								<label class="control-label col-md-4">{PHP.L.Password}:</label>
 								<div class="col-md-8">{USERS_AUTH_PASSWORD}</div>
 							</div>
 							<div class="form-group">
-								<label class="fontrol-label col-md-4"></label>
+								<label class="control-label col-md-4"></label>
 								<div class="col-md-8">
 									<div class="checkbox">
 										<label>{USERS_AUTH_REMEMBER}&nbsp; {PHP.L.users_rememberme}</label>
@@ -30,7 +30,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="fontrol-label col-md-4"></label>
+								<label class="control-label col-md-4"></label>
 								<div class="col-md-8">
 									<button type="submit" name="rlogin" class="btn btn-large btn-primary" value="0">{PHP.L.Login}</button>
 								</div>
