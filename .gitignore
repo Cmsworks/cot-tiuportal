@@ -13,9 +13,12 @@ sef-urls.nginx.conf
 /images/
 /js/
 /lang/
-/lib/
+/lib/cssmin.php
+/lib/index.html
+/lib/jsmin.php
 /setup/
-/system/
+/system/*
+!/system/functions.custom.php
 /modules/forums/
 /modules/index/
 /modules/install/
@@ -67,3 +70,4 @@ sef-urls.nginx.conf
 /plugins/subcat/
 /plugins/pagecattree/
 /plugins/fancybox/
+/plugins/indexnews/

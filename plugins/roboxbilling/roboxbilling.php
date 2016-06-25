@@ -27,10 +27,10 @@ if (empty($m))
 	// Получаем информацию о заказе
 	if (!empty($pid) && $pinfo = cot_payments_payinfo($pid))
 	{
-
+		cot_block($usr['id'] == $pinfo['pay_userid']);
 		cot_block($pinfo['pay_status'] == 'new' || $pinfo['pay_status'] == 'process');
 
-		$url = ($cfg['plugin']['roboxbilling']['testmode']) ? 'http://test.robokassa.ru/Index.aspx' : 'https://merchant.roboxchange.com/Index.aspx';
+		$url = 'https://merchant.roboxchange.com/Index.aspx';
 
 		$mrh_login = $cfg['plugin']['roboxbilling']['mrh_login'];
 		$mrh_pass1 = $cfg['plugin']['roboxbilling']['mrh_pass1'];
