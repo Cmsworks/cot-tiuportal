@@ -46,5 +46,11 @@
 			<!-- ENDIF -->
 		</div>
 	</div>
-	
+	<!-- IF {INDEX_TAG_CLOUD_MARKET} -->
+	<div class="row">
+		<div class="col-md-12">		
+			{INDEX_TAG_CLOUD_MARKET}
+		</div>
+	</div>
+	<!-- ENDIF -->
 <!-- END: MAIN -->
